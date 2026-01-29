@@ -36,16 +36,16 @@ jobs:
       - name: Prepare deployment
         run: |
           # Create _site directory
-          mkdir -p ./_site/docs
+          mkdir -p ./_site/app
           
-          # Copy Blazor app output to root
-          cp -r publish/wwwroot/* ./_site/
+          # Copy docs (workshop walkthrough) to root
+          cp -r docs/* ./_site/
           
-          # Copy docs folder
-          cp -r docs/* ./_site/docs/
+          # Copy Blazor app output to /app subdirectory
+          cp -r publish/wwwroot/* ./_site/app/
           
           # Fix base href for GitHub Pages subdirectory
-          sed -i 's|<base href="/" />|<base href="/vscode-github-copilot-agent-lab/" />|g' ./_site/index.html
+          sed -i 's|<base href="/" />|<base href="/vscode-github-copilot-agent-lab/app/" />|g' ./_site/app/index.html
           
           # Prevent Jekyll processing
           touch ./_site/.nojekyll
