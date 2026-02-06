@@ -2,8 +2,7 @@
 name: UI Review
 argument-hint: Optional review area to focus on (or just "start")
 model: Claude Haiku 4.5 (copilot)
-tools: ['search', 'execute/getTaskOutput', 'github/*', 'playwright/*', 'search/usages', 'read/problems', 'web/fetch', 'web/githubRepo', 'todo', 'agent']
-infer: true
+tools: ['search', 'search/usages', 'read/problems', 'web/fetch', 'todo', 'agent']
 ---
 
 Your goal is to do an in-depth UI review of a website using Playwright and scope potential fixes.
