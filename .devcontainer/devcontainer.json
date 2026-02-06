@@ -2,7 +2,7 @@
   "name": "Soc-Ops Python",
   "image": "mcr.microsoft.com/devcontainers/python:3.13",
   "features": {
-    "ghcr.io/devcontainer-community/features/astral.sh-uv:1": {}
+    "ghcr.io/devcontainers-extra/features/uv-tool:1": {}
   },
   "customizations": {
     "vscode": {
