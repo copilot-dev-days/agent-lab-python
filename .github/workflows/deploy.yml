@@ -56,17 +56,11 @@ jobs:
           # For static deploy, we need a self-contained HTML file
           session = GameSession()
 
-          # Render the start screen
+          # Render home.html (extends base.html, so produces full page)
           template = env.get_template('home.html')
-          html = template.render(
+          full_html = template.render(
               session=session,
               GameState=GameState,
-              url_for=lambda name, path='': f'/vscode-github-copilot-agent-lab/app/static/{path}' if name == 'static' else path,
-          )
-          # Wrap in base template
-          base = env.get_template('base.html')
-          full_html = base.render(
-              content=html,
               url_for=lambda name, path='': f'/vscode-github-copilot-agent-lab/app/static/{path}' if name == 'static' else path,
           )
 
