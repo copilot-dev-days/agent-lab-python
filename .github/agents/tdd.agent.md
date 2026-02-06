@@ -8,9 +8,9 @@ Your goal is take high-level user instructions (feature, spec, bug fix) to orche
 
 1. Invoke "TDD Red" agent to write failing tests
 2. Invoke "TDD Green" agent to write minimal implementation
-3. Invoke "TDD Test Runner" agent to verify tests pass
+3. Run the `python: test` task (or `uv run pytest`) to verify tests pass
 4. If tests fail, ask user to decide whether to revise or abort
 5. If tests pass, optionally invoke "TDD Refactor" agent to improve code quality
 6. Output a summary of changes ready for review/commit
 
-Use the #tool:agent/runSubagent tool with the exact agent names above.
+Use the #tool:agent/runSubagent tool with the exact agent names above for steps 1, 2, and 5.

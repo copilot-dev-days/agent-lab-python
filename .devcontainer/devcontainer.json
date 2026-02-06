@@ -1,26 +1,29 @@
 {
-  "name": "Soc-Ops Blazor C#",
-  "image": "mcr.microsoft.com/devcontainers/dotnet:10.0",
+  "name": "Soc-Ops Python",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
+  "features": {
+    "ghcr.io/va-h/devcontainers-features/uv": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-dotnettools.csdevkit",
-        "ms-dotnettools.csharp"
+        "ms-python.python",
+        "charliermarsh.ruff"
       ]
     },
     "codespaces": {
       "openFiles": [
-        "SocOps/Pages/Home.razor",
+        "app/main.py",
         "README.md"
       ]
     }
   },
-  "postCreateCommand": "dotnet restore SocOps/SocOps.csproj",
-  "forwardPorts": [5166],
+  "postCreateCommand": "uv sync",
+  "forwardPorts": [8000],
   "portsAttributes": {
-    "5166": {
-      "label": "Blazor Dev Server",
-      "onAutoForward": "openPreview"
+    "8000": {
+      "label": "FastAPI Dev Server",
+      "onAutoForward": "notify"
     }
   }
 }

@@ -1,11 +1,11 @@
 ---
-description: CSS utility classes and styling practices for this Blazor project.
+description: CSS utility classes and styling practices for this Python/Jinja2 project.
 ---
 
 # CSS Styling Practices
 
 ## Overview
-This project uses custom CSS utility classes (similar to Tailwind) defined in `wwwroot/css/app.css`. These provide consistent, composable styling without external dependencies.
+This project uses custom CSS utility classes (similar to Tailwind) defined in `app/static/css/app.css`. These provide consistent, composable styling without external dependencies.
 
 ## Available Utilities
 
@@ -74,7 +74,7 @@ This project uses custom CSS utility classes (similar to Tailwind) defined in `w
 4. **Keep specificity low**: Utility classes should be single-purpose
 
 ## Example Component Styling
-```razor
+```html
 <div class="flex flex-col items-center justify-center min-h-full bg-gray-50">
     <button class="px-6 py-3 bg-accent text-white rounded-lg font-semibold">
         Start Game

@@ -1,6 +1,6 @@
 # 🎉 Workshop Complete!
 
-[🎮 Play Game](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/) • [← Part 4](04-multi-agent.md)
+[🎮 Play Game](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Part 4](04-multi-agent.md)
 
 ---
 
@@ -60,4 +60,4 @@ We can't wait to see what you build next!
 
 *Happy Coding! 👋*
 
-*— The VS Code and .NET Teams*
+*— The VS Code Team*

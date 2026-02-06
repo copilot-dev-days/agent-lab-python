@@ -1,6 +1,6 @@
 # Soc Ops — VS Code GitHub Copilot Agent Lab
 
-[🎮 Live Demo](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../README.md)
+[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../README.md)
 
 ---
 
@@ -24,7 +24,7 @@
 
 - [ ] VS Code **v1.107+**
 - [ ] GitHub Copilot (Pro/Business/Enterprise)
-- [ ] Git & .NET 10 SDK
+- [ ] Git & Python 3.13 + uv
 - [ ] Chat panel open
 
 ---
@@ -32,7 +32,7 @@
 ## 🚀 Quick Setup
 
 ```
-# 1. Use template at github.com/dotnet-presentations/vscode-github-copilot-agent-lab
+# 1. Use template at github.com/madebygps/vscode-github-copilot-agent-lab
 # 2. Enable GitHub Pages (Settings > Pages > GitHub Actions)
 # 3. Clone in VS Code
 # 4. Run /setup in Chat
@@ -95,6 +95,6 @@ Skill Bingo • Tech Life • Chaos Bingo • Travel • Fandom • Office Humor
 
 ---
 
-[🎮 Live Demo](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../README.md)
+[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../README.md)
 
-*Happy Coding! 👋 — VS Code & .NET Teams*
+*Happy Coding! 👋 — VS Code Team*

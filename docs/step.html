@@ -661,8 +661,11 @@
             console.log('%c↑↑↓↓←→←→BA', 'font-size: 16px; color: #00f5ff;');
         }
 
-        // Base URL for fetching markdown from GitHub
-        const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/dotnet-presentations/vscode-github-copilot-agent-lab/main/.lab/';
+        // Base URL for fetching markdown - use local files when served locally, GitHub raw for production
+        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const GITHUB_RAW_BASE = isLocal
+            ? '../.lab/'
+            : 'https://raw.githubusercontent.com/madebygps/vscode-github-copilot-agent-lab/main/.lab/';
 
         // Get current step from URL
         function getCurrentStepId() {

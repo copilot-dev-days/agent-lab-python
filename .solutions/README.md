@@ -11,9 +11,9 @@ This folder contains step-by-step checkpoints for the VS Code Agent Lab workshop
 
 | Step | Description | Key Changes |
 |------|-------------|-------------|
-| `step-00-baseline` | Starting point | Clean Blazor app with basic bingo game |
+| `step-00-baseline` | Starting point | Clean Python app with basic bingo game |
 | `step-01-instructions` | Workspace instructions | Added `.github/copilot-instructions.md` |
-| `step-02-linting` | Linting rules | Added `.editorconfig` with C# analyzers |
+| `step-02-linting` | Linting rules | Ruff linting configured in `pyproject.toml` |
 | `step-03-readme-update` | Enhanced README | Made README more engaging as landing page |
 | `step-04-redesign-cyberpunk` | UI Redesign | Cyberpunk Neon theme applied |
 | `step-05-quiz-techlife` | Quiz Master | Tech Life Bingo questions |
@@ -25,20 +25,21 @@ This folder contains step-by-step checkpoints for the VS Code Agent Lab workshop
 
 ### Option 1: Copy files to your project
 ```bash
-# From repo root, copy a checkpoint's SocOps folder
-cp -r .solutions/step-04-redesign-cyberpunk/SocOps ./SocOps
+# From repo root, copy a checkpoint's app folder
+cp -r .solutions/step-04-redesign-cyberpunk/app ./app
 ```
 
 ### Option 2: Run a checkpoint directly
 ```bash
 cd .solutions/step-04-redesign-cyberpunk
-dotnet run --project SocOps/SocOps.csproj
+uv sync
+uv run uvicorn app.main:app --reload --port 8000
 ```
 
 ### Option 3: Compare your changes
 ```bash
 # See what changed in a step
-diff -r SocOps .solutions/step-04-redesign-cyberpunk/SocOps
+diff -r app .solutions/step-04-redesign-cyberpunk/app
 ```
 
 ## Workshop Guide Reference
@@ -48,7 +49,7 @@ See [`.lab/GUIDE.md`](../.lab/GUIDE.md) for the full workshop instructions.
 ## Checkpoint Details
 
 ### Step 0: Baseline
-The starting point - a working Blazor WebAssembly bingo game with:
+The starting point — a working Python (FastAPI + Jinja2 + HTMX) bingo game with:
 - Start screen with "Start Game" button
 - 5x5 bingo board with random questions
 - Click to mark squares
@@ -57,15 +58,15 @@ The starting point - a working Blazor WebAssembly bingo game with:
 
 ### Step 1: Workspace Instructions
 After running "Generate Workspace Instructions":
-- `.github/copilot-instructions.md` - Development checklist and project overview
+- `.github/copilot-instructions.md` — Development checklist and project overview
 
 ### Step 2: Linting Rules  
 After adding linting for code quality:
-- `.editorconfig` - C# analyzer rules for unused variables, async patterns
+- Ruff rules configured in `pyproject.toml` for unused variables, type hints
 
 ### Step 3: README Update
 After making the README engaging:
-- `README.md` - Project landing page with features, screenshots, quick start
+- `README.md` — Project landing page with features, screenshots, quick start
 
 ### Step 4: Cyberpunk Neon Redesign
 Full UI overhaul with Cyberpunk Neon theme:

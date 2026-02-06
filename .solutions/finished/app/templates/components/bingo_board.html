@@ -1,0 +1,27 @@
+<div class="grid grid-cols-5 gap-1 w-full max-w-md mx-auto aspect-square">
+    {% for square in session.board %}
+    {% set is_winning = square.id in session.winning_square_ids %}
+    <button
+        {% if not square.is_free_space %}
+        hx-post="/toggle/{{ square.id }}"
+        hx-target="#game-container"
+        hx-swap="outerHTML"
+        {% endif %}
+        {% if square.is_free_space %}disabled{% endif %}
+        class="relative flex items-center justify-center p-1 text-center border border-gray-300 rounded transition-all duration-150 select-none min-h-[60px] text-xs leading-tight
+        {%- if square.is_marked %}
+            {%- if is_winning %} bg-amber-200 border-amber-400 text-amber-900
+            {%- else %} bg-marked border-marked-border text-green-800
+            {%- endif %}
+        {%- else %} bg-white text-gray-700 active:bg-gray-100
+        {%- endif %}
+        {%- if square.is_free_space %} font-bold text-sm{% endif %}"
+        aria-pressed="{{ 'true' if square.is_marked else 'false' }}"
+        aria-label="{{ 'Free space' if square.is_free_space else square.text }}">
+        <span class="wrap-break-word hyphens-auto">{{ square.text }}</span>
+        {% if square.is_marked and not square.is_free_space %}
+        <span class="absolute top-0.5 right-0.5 text-green-600 text-xs">✓</span>
+        {% endif %}
+    </button>
+    {% endfor %}
+</div>

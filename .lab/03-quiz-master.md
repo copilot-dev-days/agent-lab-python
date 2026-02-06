@@ -1,6 +1,6 @@
 # Part 3: Custom Quiz Master
 
-[🎮 Live Demo](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](GUIDE.md) • [← Part 2](02-design.md)
+[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](GUIDE.md) • [← Part 2](02-design.md)
 
 ---
 
@@ -128,6 +128,6 @@ You've learned how to:
 
 ---
 
-[🎮 Live Demo](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](GUIDE.md) • [← Part 2](02-design.md)
+[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](GUIDE.md) • [← Part 2](02-design.md)
 
 👉 **[Continue to Part 4: Multi-Agent Development →](04-multi-agent.md)**

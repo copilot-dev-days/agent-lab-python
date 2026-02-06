@@ -1,6 +1,6 @@
 # Part 1: Setup & Context Engineering
 
-[🎮 Live Demo](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/) • [← Overview](00-overview.md)
+[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Overview](00-overview.md)
 
 ---
 
@@ -14,9 +14,9 @@ In this section, you'll set up your development environment and teach GitHub Cop
 
 ### Step 1: Create Your Repository
 
-1. Open [github.com/dotnet-presentations/vscode-github-copilot-agent-lab](https://github.com/dotnet-presentations/vscode-github-copilot-agent-lab)
+1. Open [github.com/madebygps/vscode-github-copilot-agent-lab](https://github.com/madebygps/vscode-github-copilot-agent-lab)
 2. Click **Use this template** → **Create a new repository**
-   - Name: `my-soc-ops-csharp`
+   - Name: `my-soc-ops-python`
    - Visibility: **Public**
 3. ✅ Your own Soc Ops repo is ready!
 
@@ -83,7 +83,7 @@ Background agents run in isolated git worktrees — perfect for tasks that don't
 1. Click `+` in Chat → **New background agent**
 2. Enter:
    ```
-   Add linting rules for unused vars and async/await usage; fix any errors
+   Add linting rules with ruff for unused vars and type hints; fix any errors
    ```
 3. Let it run, then **Review** and **Apply** the changes
 4. Right-click the session to delete it when done
@@ -108,7 +108,7 @@ Your repo comes with pre-configured instructions that help the AI understand the
 
 📄 See `.github/instructions/css-utilities.instructions.md`
 
-These document the custom Tailwind-like CSS classes available in this Blazor project.
+These document the custom CSS utility classes available in this Python/Jinja2 project.
 
 > 💡 **Optional:** Delete the main text and re-run the prompt to see how it generates
 
@@ -132,6 +132,6 @@ You've learned how to:
 
 ---
 
-[🎮 Live Demo](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/) • [← Overview](00-overview.md)
+[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Overview](00-overview.md)
 
 👉 **[Continue to Part 2: Design-First Frontend →](02-design.md)**

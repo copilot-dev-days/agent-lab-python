@@ -1,24 +1,28 @@
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
 
-# Visual Studio cache/options
-.vs/
+# Virtual environment
+.venv/
+venv/
+
+# uv
+uv.lock
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Ruff
+.ruff_cache/
 
 # Visual Studio Code
-!.vscode/extensions.json
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -26,28 +30,12 @@ bld/
 !.vscode/extensions.json
 !.vscode/*.json
 
-# User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# Files built by Visual Studio
-*.pidb
-*.svclog
-*.scc
-
 # Editor directories and files
 .idea
 .DS_Store
 *.sw?
 .playwright-mcp
 
-# .NET Core
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
 # Local
 *.local
+_site/

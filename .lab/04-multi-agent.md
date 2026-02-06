@@ -1,6 +1,6 @@
 # Part 4: Multi-Agent Development
 
-[🎮 Live Demo](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](GUIDE.md) • [← Part 3](03-quiz-master.md)
+[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](GUIDE.md) • [← Part 3](03-quiz-master.md)
 
 ---
 
@@ -215,8 +215,8 @@ Congratulations! You've completed the VS Code GitHub Copilot Agent Lab.
 
 ---
 
-[🎮 Play Game](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/) • [← Part 3](03-quiz-master.md)
+[🎮 Play Game](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Part 3](03-quiz-master.md)
 
 Happy Coding! 👋
 
-*— The VS Code and .NET Teams*
+*— The VS Code Team*

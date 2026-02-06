@@ -1,0 +1,32 @@
+[project]
+name = "soc-ops"
+version = "1.0.0"
+description = "Social Bingo game for in-person mixers"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.0",
+    "itsdangerous>=2.2.0",
+    "jinja2>=3.1.0",
+    "uvicorn[standard]>=0.34.0",
+]
+
+[project.scripts]
+soc-ops = "app.main:run"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "httpx>=0.28.0",
+    "ruff>=0.11.0",
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
