@@ -2,9 +2,9 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "dotnet: run",
+			"label": "python: run",
 			"type": "shell",
-			"command": "dotnet run --project SocOps/SocOps.csproj",
+			"command": "uv run uvicorn app.main:app --reload --port 8000",
 			"isBackground": true,
 			"problemMatcher": {
 				"pattern": {
@@ -12,8 +12,8 @@
 				},
 				"background": {
 					"activeOnStart": true,
-					"beginsPattern": "^.*Building.*",
-					"endsPattern": "^.*Application started.*"
+					"beginsPattern": "^.*Started.*",
+					"endsPattern": "^.*Application startup complete.*"
 				}
 			},
 			"presentation": {
@@ -25,11 +25,18 @@
 			}
 		},
 		{
-			"label": "dotnet: build",
+			"label": "python: test",
 			"type": "shell",
-			"command": "dotnet build SocOps/SocOps.csproj",
-			"group": "build",
-			"problemMatcher": "$msCompile"
+			"command": "uv run pytest",
+			"group": "test",
+			"problemMatcher": []
+		},
+		{
+			"label": "python: lint",
+			"type": "shell",
+			"command": "uv run ruff check .",
+			"group": "test",
+			"problemMatcher": []
 		}
 	]
 }

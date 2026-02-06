@@ -22,20 +22,34 @@ Social Bingo game for in-person mixers. Find people who match the questions and 
 
 ## Prerequisites
 
-- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or higher
+- [Python 3.13](https://www.python.org/downloads/) or higher
+- [uv](https://docs.astral.sh/uv/) package manager
+
+## Setup
+
+```bash
+uv sync
+```
 
 ## Run
 
 ```bash
-cd SocOps
-dotnet run
+uv run uvicorn app.main:app --reload
 ```
 
-## Build
+Then open http://localhost:8000 in your browser.
+
+## Test
 
 ```bash
-cd SocOps
-dotnet build
+uv run pytest
+```
+
+## Lint
+
+```bash
+uv run ruff check .
+uv run ruff format .
 ```
 
 Deploys automatically to GitHub Pages on push to `main`.

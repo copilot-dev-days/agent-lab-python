@@ -5,10 +5,10 @@
     "setup": "resourceFilename == 'README.md'"
   },
   "chat.tools.terminal.autoApprove": {
-    "dotnet build": true,
-    "dotnet run": true,
-    "dotnet test": true,
-    "dotnet restore": true
+    "uv run uvicorn": true,
+    "uv run pytest": true,
+    "uv run ruff": true,
+    "uv sync": true
   },
   "github.copilot.chat.githubMcpServer.enabled": true,
   "github.copilot.chat.githubMcpServer.toolsets": [
@@ -17,5 +17,13 @@
   "chat.viewTitle.enabled": true,
   "chat.viewSessions.enabled": true,
   "github.copilot.chat.cli.customAgents.enabled": true,
-  "scm.repositories.explorer": true
+  "scm.repositories.explorer": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  }
 }

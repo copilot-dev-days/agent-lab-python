@@ -1,6 +1,6 @@
 {
   "recommendations": [
-    "ms-dotnettools.csdevkit",
-    "ms-dotnettools.csharp"
+    "ms-python.python",
+    "charliermarsh.ruff"
   ]
 }
