@@ -49,7 +49,7 @@ questions_list: list[str] = [
 ```
 
 ### Workshop Guide
-👉 Follow the [Lab Guide](.lab/GUIDE.md) for a hands-on workshop experience with GitHub Copilot agents.
+👉 Follow the [Lab Guide](workshop/GUIDE.md) for a hands-on workshop experience with GitHub Copilot agents.
 
 ## 🛠️ Tech Stack
 

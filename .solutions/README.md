@@ -44,7 +44,7 @@ diff -r app .solutions/step-04-redesign-cyberpunk/app
 
 ## Workshop Guide Reference
 
-See [`.lab/GUIDE.md`](../.lab/GUIDE.md) for the full workshop instructions.
+See [`workshop/GUIDE.md`](../workshop/GUIDE.md) for the full workshop instructions.
 
 ## Checkpoint Details
 

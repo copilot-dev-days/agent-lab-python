@@ -16,7 +16,7 @@ Social Bingo game for in-person mixers. Find people who match the questions and 
 | [**03**](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=03-quiz-master) | Custom Quiz Master |
 | [**04**](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/step.html?step=04-multi-agent) | Multi-Agent Development |
 
-> 📝 Lab guides are also available in the [`.lab/`](.lab/) folder for offline reading.
+> 📝 Lab guides are also available in the [`workshop/`](workshop/) folder for offline reading.
 
 ---
 
