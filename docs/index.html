@@ -8,8 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="light-theme.css">
+    <script src="theme-toggle.js"></script>
 </head>
 <body>
+    <div style="position:fixed;top:1rem;right:1rem;z-index:1000;">
+        <button class="theme-toggle" onclick="toggleTheme()">☀️ Light</button>
+    </div>
     <div class="container">
         <!-- Hero -->
         <section class="hero">
