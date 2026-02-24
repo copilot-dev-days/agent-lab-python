@@ -131,9 +131,3 @@ You've learned how to:
 - Iterate on plans before implementing
 - Keep instructions updated with changes
 - Scale exploration with parallel cloud agents
-
----
-
-[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Part 1](01-setup.md)
-
-👉 **[Continue to Part 3: Custom Quiz Master →](03-quiz-master.md)**

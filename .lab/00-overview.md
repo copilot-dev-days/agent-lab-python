@@ -55,16 +55,3 @@ Before you begin, verify:
 3. **Use checkpoints** — Revert unexpected changes with chat Checkpoints & Undo
 4. **📌 Pin this guide** — Keep it visible while you work
 
----
-
-## 🚀 Ready?
-
-👉 **[Start with Part 1: Setup](01-setup.md)**
-
----
-
----
-
-[🎮 Play Game](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../README.md)
-
-*Created by the VS Code team*

@@ -55,9 +55,3 @@ You've completed the **VS Code GitHub Copilot Agent Lab**!
 Thanks for joining us on this journey into AI-assisted development.
 
 We can't wait to see what you build next!
-
----
-
-*Happy Coding! 👋*
-
-*— The VS Code Team*

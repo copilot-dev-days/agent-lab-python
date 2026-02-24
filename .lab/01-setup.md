@@ -129,9 +129,3 @@ You've learned how to:
 - Generate and refine workspace instructions
 - Use background and cloud agents for parallel work
 - Understand existing instruction files
-
----
-
-[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Overview](00-overview.md)
-
-👉 **[Continue to Part 2: Design-First Frontend →](02-design.md)**
