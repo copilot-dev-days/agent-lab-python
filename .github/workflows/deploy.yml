@@ -61,7 +61,7 @@ jobs:
           full_html = template.render(
               session=session,
               GameState=GameState,
-              url_for=lambda name, path='': f'/vscode-github-copilot-agent-lab/app/static/{path}' if name == 'static' else path,
+              url_for=lambda name, path='': f'/agent-lab-python/app/static/{path}' if name == 'static' else path,
           )
 
           with open('_site/app/index.html', 'w') as f:
