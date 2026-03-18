@@ -31,6 +31,13 @@ Social Bingo game for in-person mixers. Find people who match the questions and 
 uv sync
 ```
 
+### Devcontainer / Codespaces
+
+This repository includes a preconfigured devcontainer at `.devcontainer/devcontainer.json`.
+
+- **Local VS Code**: Reopen the repo in container when prompted
+- **GitHub Codespaces**: In your own repository created from this template, click **Code** → **Codespaces** → **Create codespace on main**
+
 ## Run
 
 ```bash

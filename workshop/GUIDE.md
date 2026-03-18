@@ -32,10 +32,11 @@
 ## 🚀 Quick Setup
 
 ```
-# 1. Use template at github.com/copilot-dev-days/agent-lab-python
-# 2. Enable GitHub Pages (Settings > Pages > GitHub Actions)
-# 3. Clone in VS Code
-# 4. Run /setup in Chat
+# Step 1: Use template to create your own repo
+# Step 2: Enable GitHub Pages in your new repo
+# Step 3a (local): Clone your repo in VS Code
+# Step 3b (cloud): Open your repo in Codespaces (Code > Codespaces > Create codespace on main)
+# Then run /setup in Chat
 ```
 
 ---

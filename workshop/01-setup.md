@@ -12,7 +12,7 @@ In this section, you'll set up your development environment and teach GitHub Cop
 
 ## 🔧 Initial Setup
 
-### Step 1: Create Your Repository
+### Step 1: Create Your Own Repository (required)
 
 1. Open [github.com/copilot-dev-days/agent-lab-python](https://github.com/copilot-dev-days/agent-lab-python)
 2. Click **Use this template** → **Create a new repository**
@@ -26,14 +26,25 @@ In this section, you'll set up your development environment and teach GitHub Cop
 2. Under "Build and deployment", select **GitHub Actions**
 3. ✅ Every commit will now publish to: `https://{username}.github.io/{repo-name}`
 
-### Step 3: Clone & Open in VS Code
+### Step 3: Choose How to Open Your Repository
+
+This repo includes a ready-to-use devcontainer (`.devcontainer/devcontainer.json`), so you can work locally or in Codespaces.
+
+#### Option A: Clone & Open in Local VS Code
 
 1. Open VS Code
 2. Run command: `Git: Clone` → `Clone from GitHub`
 3. Select your new repository
 4. When prompted, install **recommended extensions**
 
-### Step 4: Run the Setup Agent
+#### Option B: Open Your New Repo in GitHub Codespaces
+
+1. Open your newly created repository on GitHub
+2. Click **Code** → **Codespaces** → **Create codespace on main**
+3. Wait for setup to finish (the devcontainer runs `uv sync` automatically)
+4. ✅ You can start the lab directly in the browser-based VS Code experience
+
+### Step 4: Run the Setup Agent (both options)
 
 In the Chat panel:
 
