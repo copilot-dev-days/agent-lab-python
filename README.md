@@ -36,7 +36,7 @@ uv sync
 This repository includes a preconfigured devcontainer at `.devcontainer/devcontainer.json`.
 
 - **Local VS Code**: Reopen the repo in container when prompted
-- **GitHub Codespaces**: Click **Code** → **Codespaces** → **Create codespace on main**
+- **GitHub Codespaces**: In your own repository created from this template, click **Code** → **Codespaces** → **Create codespace on main**
 
 ## Run
 

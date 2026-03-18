@@ -32,8 +32,10 @@
 ## 🚀 Quick Setup
 
 ```
-# Option A (Codespaces): Code > Codespaces > Create codespace on main
-# Option B (own repo): Use template, enable GitHub Pages, then clone in VS Code
+# Step 1: Use template to create your own repo
+# Step 2: Enable GitHub Pages in your new repo
+# Step 3a (local): Clone your repo in VS Code
+# Step 3b (cloud): Open your repo in Codespaces (Code > Codespaces > Create codespace on main)
 # Then run /setup in Chat
 ```
 
