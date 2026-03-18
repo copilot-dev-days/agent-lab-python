@@ -220,6 +220,8 @@
         const GITHUB_RAW_BASE = isLocal
             ? '../workshop/'
             : 'https://raw.githubusercontent.com/copilot-dev-days/agent-lab-python/main/workshop/';
+        const CHECKBOX_STORAGE_KEY = 'agent-lab-checkboxes-v1';
+        let checkboxSaveTimeout;
 
         // Get current step from URL
         function getCurrentStepId() {
@@ -230,6 +232,54 @@
         function getCurrentStepIndex() {
             const stepId = getCurrentStepId();
             return steps.findIndex(s => s.id === stepId);
+        }
+
+        function readCheckboxState() {
+            try {
+                return JSON.parse(localStorage.getItem(CHECKBOX_STORAGE_KEY) || '{}');
+            } catch {
+                return {};
+            }
+        }
+
+        function writeCheckboxState(state) {
+            try {
+                localStorage.setItem(CHECKBOX_STORAGE_KEY, JSON.stringify(state));
+            } catch {
+                // Ignore storage failures (private mode / blocked storage)
+            }
+        }
+
+        function writeCheckboxStateDebounced(state) {
+            clearTimeout(checkboxSaveTimeout);
+            checkboxSaveTimeout = setTimeout(() => writeCheckboxState(state), 100);
+        }
+
+        function initializeTaskListCheckboxes(stepId) {
+            const container = document.getElementById('markdown-content');
+            if (!container) return;
+            const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+            if (checkboxes.length === 0) return;
+
+            const allState = readCheckboxState();
+            if (!Array.isArray(allState[stepId])) {
+                allState[stepId] = [];
+            }
+            const stepState = allState[stepId];
+
+            checkboxes.forEach((checkbox, index) => {
+                checkbox.disabled = false;
+
+                if (typeof stepState[index] === 'boolean') {
+                    checkbox.checked = stepState[index];
+                }
+
+                checkbox.addEventListener('change', () => {
+                    stepState[index] = checkbox.checked;
+                    allState[stepId] = stepState;
+                    writeCheckboxStateDebounced(allState);
+                });
+            });
         }
 
         // Build sidebar navigation
@@ -339,6 +389,7 @@
                 });
 
                 document.getElementById('markdown-content').innerHTML = marked.parse(md);
+                initializeTaskListCheckboxes(step.id);
 
                 // If this is the completion page, add confetti!
                 if (step.id === '05-complete') {
