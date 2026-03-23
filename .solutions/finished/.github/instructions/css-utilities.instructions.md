@@ -18,29 +18,43 @@ This project uses custom CSS utility classes (similar to Tailwind) defined in `a
 
 ### Spacing
 ```css
-.p-1 through .p-6, .px-*, .py-*
-.mb-2 through .mb-8, .mx-auto
+/* Padding */
+.p-1, .p-3, .p-4, .p-6
+.px-3, .px-4, .px-6, .px-8
+.py-1\.5, .py-2, .py-3, .py-4
+/* Margin */
+.mb-2, .mb-3, .mb-4, .mb-6, .mb-8, .mx-auto
+/* Gap */
 .gap-1, .space-y-2
 ```
 
 ### Sizing
 ```css
-.h-full, .w-full, .min-h-full
+.h-full, .w-full, .w-16, .min-h-full
 .max-w-xs, .max-w-sm, .max-w-md
 .aspect-square
+.min-h-[60px]
 ```
 
 ### Colors
 ```css
+/* Backgrounds */
 .bg-white, .bg-gray-50, .bg-gray-100
-.bg-accent (primary blue), .bg-marked (green for selected)
-.text-gray-500 through .text-gray-900
-.text-green-600, .text-amber-500
+.bg-amber-100, .bg-amber-200
+.bg-accent (primary blue: #2563eb)
+.bg-marked (light green: #dcfce7)
+.bg-black/50 (semi-transparent overlay)
+/* Text */
+.text-white
+.text-gray-500, .text-gray-600, .text-gray-700, .text-gray-800, .text-gray-900
+.text-green-600, .text-green-800
+.text-amber-500, .text-amber-800, .text-amber-900
 ```
 
 ### Typography
 ```css
-.text-xs through .text-5xl
+/* Size (only these exist — no text-base, text-xl, text-2xl, etc.) */
+.text-xs, .text-sm, .text-lg, .text-3xl, .text-4xl, .text-5xl
 .font-semibold, .font-bold
 .text-center, .text-left
 .leading-tight
@@ -49,6 +63,7 @@ This project uses custom CSS utility classes (similar to Tailwind) defined in `a
 ### Borders & Shadows
 ```css
 .border, .border-b
+.border-gray-200, .border-gray-300, .border-amber-400, .border-marked-border
 .rounded, .rounded-lg, .rounded-xl
 .shadow-sm, .shadow-xl
 ```
@@ -56,7 +71,16 @@ This project uses custom CSS utility classes (similar to Tailwind) defined in `a
 ### Positioning
 ```css
 .fixed, .absolute, .relative
-.inset-0, .z-50
+.inset-0
+.top-0\.5, .right-0\.5
+.z-50
+```
+
+### Interactivity
+```css
+.select-none
+.wrap-break-word
+.hyphens-auto
 ```
 
 ### Animation

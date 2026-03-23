@@ -1,6 +1,6 @@
 # 🎉 Workshop Complete!
 
-[🎮 Play Game](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Part 4](04-multi-agent.md)
+[📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Part 4](04-multi-agent.md)
 
 ---
 
@@ -27,7 +27,7 @@ You've completed the **VS Code GitHub Copilot Agent Lab**!
 | Skill | Description |
 |-------|-------------|
 | **Context Engineering** | Teaching AI about your codebase with instructions |
-| **Agentic Primitives** | Background agents, cloud agents, and custom workflows |
+| **Agentic Primitives** | Copilot CLI sessions, cloud agents, and custom workflows |
 | **Design-First Development** | UI iteration with AI assistance |
 | **Test-Driven Development** | Reliable code with TDD agents |
 

@@ -1,6 +1,6 @@
 # Part 2: Design-First Frontend
 
-[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Part 1](01-setup.md)
+[📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Part 1](01-setup.md)
 
 ---
 
@@ -12,18 +12,18 @@ Now that your repo context is engineered, let's get creative! You'll redesign th
 
 ## 🎨 Task 1: Make It Yours
 
-Use **Plan Mode** to start any bigger work item. Iterate on the plan (2+ times!) with tweaks and clarifications.
+Use the **Plan agent** to start any bigger work item. Iterate on the plan (2+ times!) with tweaks and clarifications.
 
 ### Steps
 
-1. In Chat, switch to **Plan Mode** (toggle at bottom)
+1. Click the **New Session dropdown** (`+`) and select **Plan**
 2. Enter your vision:
    ```
    Let's do a full redesign. Make it [YOUR THEME]
    ```
 3. Review the generated plan
 4. Ask for adjustments until you're happy
-5. Click **Implement** to execute
+5. Click **Start Implementation** to execute
 
 ### 🎭 Theme Ideas
 
@@ -57,8 +57,6 @@ When you make major architecture, design, or dependency changes, update your ins
 2. Review the changes
 3. **Commit and push**
 
-> 💡 Check that GitHub Pages is updating with your new design!
-
 ---
 
 ## 🚀 Task 3: Scale Exploration with Cloud Agents
@@ -67,7 +65,7 @@ Generate multiple design variations in parallel using cloud agents.
 
 ### Steps
 
-1. Start a **new Chat** in Plan Mode
+1. Click the **New Session dropdown** (`+`) and select **Plan**
 2. Enter:
    ```
    Redesign the start screen as a more engaging landing page
@@ -96,38 +94,10 @@ The prompt spins up **3 parallel cloud agents**, each exploring a different desi
 
 ---
 
-## 🖼️ Design Showcase
-
-Here's what the **Cyberpunk Neon** theme looks like:
-
-```
-┌─────────────────────────────────────────────┐
-│  ╔═══════════════════════════════════════╗  │
-│  ║     🎮 SOC OPS - SOCIAL BINGO 🎮      ║  │
-│  ╚═══════════════════════════════════════╝  │
-│                                             │
-│  ┌─────┬─────┬─────┬─────┬─────┐          │
-│  │ ▓▓▓ │ ░░░ │ ▓▓▓ │ ░░░ │ ▓▓▓ │          │
-│  ├─────┼─────┼─────┼─────┼─────┤          │
-│  │ ░░░ │ ▓▓▓ │ ░░░ │ ▓▓▓ │ ░░░ │  NEON   │
-│  ├─────┼─────┼─────┼─────┼─────┤  GLOW   │
-│  │ ▓▓▓ │ ░░░ │ ★★★ │ ░░░ │ ▓▓▓ │          │
-│  ├─────┼─────┼─────┼─────┼─────┤          │
-│  │ ░░░ │ ▓▓▓ │ ░░░ │ ▓▓▓ │ ░░░ │          │
-│  ├─────┼─────┼─────┼─────┼─────┤          │
-│  │ ▓▓▓ │ ░░░ │ ▓▓▓ │ ░░░ │ ▓▓▓ │          │
-│  └─────┴─────┴─────┴─────┴─────┘          │
-│                                             │
-│         [ 🔄 NEW GAME ]  [ 🎯 BINGO! ]      │
-└─────────────────────────────────────────────┘
-```
-
----
-
 ## ✅ Part 2 Complete!
 
 You've learned how to:
-- Use Plan Mode for complex design tasks
+- Use the Plan agent for complex design tasks
 - Iterate on plans before implementing
 - Keep instructions updated with changes
 - Scale exploration with parallel cloud agents

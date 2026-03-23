@@ -1,6 +1,6 @@
 # Soc Ops — VS Code GitHub Copilot Agent Lab
 
-[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../README.md)
+[📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../README.md)
 
 ---
 
@@ -33,9 +33,8 @@
 
 ```
 # Step 1: Use template to create your own repo
-# Step 2: Enable GitHub Pages in your new repo
-# Step 3a (local): Clone your repo in VS Code
-# Step 3b (cloud): Open your repo in Codespaces (Code > Codespaces > Create codespace on main)
+# Step 2a (local): Clone your repo in VS Code
+# Step 2b (cloud): Open your repo in Codespaces (Code > Codespaces > Create codespace on main)
 # Then run /setup in Chat
 ```
 
@@ -45,12 +44,12 @@
 
 ### Part 1: Context Engineering
 - [ ] Generate workspace instructions
-- [ ] Run background agent for linting
+- [ ] Run Copilot CLI session for linting
 - [ ] Run cloud agent for README
 - [ ] Review CSS & frontend instructions
 
 ### Part 2: Design-First Frontend  
-- [ ] Full UI redesign (Plan Mode)
+- [ ] Full UI redesign (Plan agent)
 - [ ] Update copilot-instructions.md
 - [ ] Run cloud-explore for variations
 

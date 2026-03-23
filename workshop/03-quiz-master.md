@@ -1,6 +1,6 @@
 # Part 3: Custom Quiz Master
 
-[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](GUIDE.md) • [← Part 2](02-design.md)
+[📚 Lab Guide](GUIDE.md) • [← Part 2](02-design.md)
 
 ---
 
@@ -71,8 +71,8 @@ Run the quiz master as a cloud agent for async generation.
 
 ### Steps
 
-1. Click `+` → **New cloud agent**
-2. Select **Quiz Master**
+1. Click the **New Session dropdown** (`+`), select **New Chat Session**, then choose **Cloud** from the **session type dropdown** at the bottom of the chat input
+2. Select **Quiz Master** as the custom agent
 3. Enter a different theme:
    ```
    Create a Tech Life Bingo with questions about 

@@ -1,6 +1,6 @@
 # Part 4: Multi-Agent Development
 
-[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](GUIDE.md) • [← Part 3](03-quiz-master.md)
+[📚 Lab Guide](GUIDE.md) • [← Part 3](03-quiz-master.md)
 
 ---
 
@@ -26,7 +26,7 @@ A new **Scavenger Hunt** mode:
 
 #### Phase 1: Plan
 
-1. Start a new Chat in **Plan Mode**
+1. Click the **New Session dropdown** (`+`) and select **Plan**
 2. Enter:
    ```
    Add a new Scavenger Hunt mode: same questions, but shown as a 
@@ -90,8 +90,8 @@ A new **Card Deck Shuffle** mode:
 
 ### Steps
 
-1. Start a new Chat
-2. Select **Pixel Jam** as the agent
+1. Click the **New Session dropdown** (`+`) and select **New Chat Session**
+2. Select **Pixel Jam** from the agent picker
 3. Enter:
    ```
    New mode: Card Deck Shuffle. Every player opens the game, 
@@ -122,10 +122,10 @@ Combine MCP tools, custom workflows, and subagent isolation for powerful review 
 
 ### Steps
 
-1. Start a new Chat with **Pixel Jam**
+1. Start a new Chat with **UI Review**
 2. Enter:
    ```
-   Run review
+   start
    ```
 3. When prompted, click **Allow for this Workspace** for Playwright tool access
 4. Watch as it:
@@ -153,7 +153,7 @@ File the critical findings as GitHub issues
 Fix the accessibility issues you found
 ```
 ```
-Assign the navigation bug to a background agent
+Assign the navigation bug to a Copilot CLI session
 ```
 
 ✅ **Result:** A comprehensive UX review with actionable findings!

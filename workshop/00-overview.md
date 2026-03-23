@@ -1,6 +1,6 @@
 # 🎮 VS Code GitHub Copilot Agent Lab
 
-[🎮 Play Game](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../README.md)
+[📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../README.md)
 
 ---
 
@@ -31,7 +31,7 @@ Before you begin, verify:
 | # | Skill | Description |
 |---|-------|-------------|
 | 1 | **Context Engineering** | Teach AI about your codebase with instructions |
-| 2 | **Agentic Primitives** | Use background agents, cloud agents, and custom workflows |
+| 2 | **Agentic Primitives** | Use Copilot CLI sessions, cloud agents, and custom workflows |
 | 3 | **Design-First Development** | Let AI iterate on UI while you guide the vision |
 | 4 | **Test-Driven Development** | Use TDD agents for reliable feature development |
 

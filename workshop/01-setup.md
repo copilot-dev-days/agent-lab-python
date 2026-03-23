@@ -1,6 +1,6 @@
 # Part 1: Setup & Context Engineering
 
-[🎮 Live Demo](https://madebygps.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Overview](00-overview.md)
+[📚 Lab Guide](https://madebygps.github.io/vscode-github-copilot-agent-lab/docs/) • [← Overview](00-overview.md)
 
 ---
 
@@ -20,13 +20,7 @@ In this section, you'll set up your development environment and teach GitHub Cop
    - Visibility: **Public**
 3. ✅ Your own Soc Ops repo is ready!
 
-### Step 2: Enable GitHub Pages
-
-1. Go to your repo's **Settings** → **Pages**
-2. Under "Build and deployment", select **GitHub Actions**
-3. ✅ Every commit will now publish to: `https://{username}.github.io/{repo-name}`
-
-### Step 3: Choose How to Open Your Repository
+### Step 2: Choose How to Open Your Repository
 
 This repo includes a ready-to-use devcontainer (`.devcontainer/devcontainer.json`), so you can work locally or in Codespaces.
 
@@ -44,7 +38,7 @@ This repo includes a ready-to-use devcontainer (`.devcontainer/devcontainer.json
 3. Wait for setup to finish (the devcontainer runs `uv sync` automatically)
 4. ✅ You can start the lab directly in the browser-based VS Code experience
 
-### Step 4: Run the Setup Agent (both options)
+### Step 3: Run the Setup Agent (both options)
 
 In the Chat panel:
 
@@ -85,13 +79,17 @@ Instructions guide all agentic interactions, making them efficient and reliable.
 
 ---
 
-### Task 2: Background Agents for Parallel Work
+### Task 2: Copilot CLI and Cloud Agents for Parallel Work
 
-Background agents run in isolated git worktrees — perfect for tasks that don't need handholding.
+Copilot CLI sessions run in isolated git worktrees, which is perfect for tasks that don't need handholding.
 
-**Steps:**
+> 💡 **Two UI controls to know:**
+> - **New Session dropdown** (`+`) -- opens a picker to create a new session of a specific type
+> - **Session type dropdown** (shows `Local` by default, bottom of the chat input) -- used for agent handoff; carries over the current conversation to a different agent type
 
-1. Click `+` in Chat → **New background agent**
+**Start a Copilot CLI session:**
+
+1. Click the **New Session dropdown** (`+`) and select **New Copilot CLI Session**
 2. Enter:
    ```
    Add linting rules with ruff for unused vars and type hints; fix any errors
@@ -99,15 +97,16 @@ Background agents run in isolated git worktrees — perfect for tasks that don't
 3. Let it run, then **Review** and **Apply** the changes
 4. Right-click the session to delete it when done
 
-**Try a Cloud Agent too:**
+**Start a Cloud Agent session:**
 
-1. Click `+` → **New cloud agent**
-2. Enter:
+1. Click the **New Session dropdown** (`+`) and select **New Chat Session**
+2. In the **session type dropdown** at the bottom of the chat input (shows `Local`), select **Cloud**
+3. Enter:
    ```
    Make the README more engaging as a landing page to the project
    ```
 
-✅ **Result:** Linting rules added, errors fixed, README improved — all merged back to main!
+✅ **Result:** Linting rules added, errors fixed, README improved -- all without interrupting your main workspace!
 
 ---
 

@@ -2,7 +2,7 @@
 name: UI Review
 argument-hint: Optional review area to focus on (or just "start")
 model: Claude Haiku 4.5 (copilot)
-tools: ['search', 'execute/getTaskOutput', 'github/*', 'playwright/*', 'search/usages', 'read/problems', 'web/fetch', 'web/githubRepo', 'todo', 'agent']
+tools: ['search', 'github/*', 'playwright/*', 'search/usages', 'read/problems', 'web/fetch', 'todo', 'agent']
 infer: true
 ---
 

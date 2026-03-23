@@ -9,17 +9,19 @@ This folder contains step-by-step checkpoints for the VS Code Agent Lab workshop
 
 ## Checkpoints Overview
 
-| Step | Description | Key Changes |
-|------|-------------|-------------|
-| `step-00-baseline` | Starting point | Clean Python app with basic bingo game |
-| `step-01-instructions` | Workspace instructions | Added `.github/copilot-instructions.md` |
-| `step-02-linting` | Linting rules | Ruff linting configured in `pyproject.toml` |
-| `step-03-readme-update` | Enhanced README | Made README more engaging as landing page |
-| `step-04-redesign-cyberpunk` | UI Redesign | Cyberpunk Neon theme applied |
-| `step-05-quiz-techlife` | Quiz Master | Tech Life Bingo questions |
-| `step-06-scavenger-hunt` | Scavenger Hunt mode | New game mode with progress tracking |
-| `step-07-card-deck` | Card Deck Shuffle | Random card draw mode |
-| `finished` | Complete workshop | All features combined |
+Solution steps are more granular than workshop parts — a single workshop part may produce multiple solution steps.
+
+| Step | Workshop Part | Description | Key Changes |
+|------|--------------|-------------|-------------|
+| `step-00-baseline` | — | Starting point | Clean Python app with basic bingo game |
+| `step-01-instructions` | [Part 1](../workshop/01-setup.md) — Task 1 | Workspace instructions | Added `.github/copilot-instructions.md` |
+| `step-02-linting` | [Part 1](../workshop/01-setup.md) — Task 2 | Linting rules | Ruff linting configured via Copilot CLI session |
+| `step-03-readme-update` | [Part 1](../workshop/01-setup.md) — Task 2 | Enhanced README | Made README more engaging via cloud agent |
+| `step-04-redesign-cyberpunk` | [Part 2](../workshop/02-design.md) — Task 1 | UI Redesign | Cyberpunk Neon theme applied |
+| `step-05-quiz-techlife` | [Part 3](../workshop/03-quiz-master.md) | Quiz Master | Tech Life Bingo questions |
+| `step-06-scavenger-hunt` | [Part 4](../workshop/04-multi-agent.md) — Task 1 | Scavenger Hunt mode | New game mode with progress tracking (TDD-built) |
+| `step-07-card-deck` | [Part 4](../workshop/04-multi-agent.md) — Task 2 | Card Deck Shuffle | Random card draw mode (Pixel Jam-built) |
+| `finished` | — | Complete workshop | All features combined |
 
 ## How to Use a Checkpoint
 
