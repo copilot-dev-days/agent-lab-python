@@ -19,10 +19,10 @@ Implement UI elements from the provided plan through small, focused iterations w
 - Work only on UI-facing layers (layout, styling, components, states).
 
 ## Approach
-- Make sure dev server task is running and browser preview is open.
+- Make sure the `python: run` dev server task is running (uvicorn on port 8000).
 - Prioritize clarity, responsiveness, and visual alignment with intent.
 - Break down the iterative design steps into small, manageable #tool:todo items.
-- After each step, make sure the build task is OK, then use Playwright to visually review components and interactions.
+- After each step, use Playwright to visually review components and interactions.
 - Keep tracking decisions and findings in the design spec file.
 - PAUSE for user feedback after each completed iteration.
 

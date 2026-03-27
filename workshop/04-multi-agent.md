@@ -14,6 +14,20 @@ Build new features using specialized agents: TDD agents for reliable code, and d
 
 Custom agents with handoffs break complex workflows into smaller steps, keeping you in control for critical decisions.
 
+### How TDD Red → Green → Refactor Works
+
+Test-Driven Development means writing tests **before** writing code. You describe what the code *should* do, watch the tests fail (because the code doesn't exist yet), then write just enough code to make them pass. This gives you confidence that every line of code exists for a reason.
+
+Each phase has its own agent:
+
+| Phase | Agent | What it does |
+|-------|-------|------|
+| **Red** | TDD Red | Writes tests for the planned feature — they **fail** because nothing is implemented yet |
+| **Green** | TDD Green | Writes the **minimum code** to make those failing tests pass — no extras |
+| **Refactor** | TDD Refactor | Cleans up the code (readability, structure) while keeping all tests **passing** |
+
+> **Important for this workshop:** In Phase 1 below, you'll plan the feature but **not implement it**. This way, when TDD Red writes tests, they'll genuinely fail — which is the whole point.
+
 ### What We're Building
 
 A new **Scavenger Hunt** mode:
@@ -37,23 +51,30 @@ A new **Scavenger Hunt** mode:
    - ✅ Creates a new component for the list view
    - ✅ Includes a progress indicator
    - ❌ Doesn't go overboard with features
-4. Once you're satisfied with the plan, click **Start Implementation** to execute it
+4. Once you're satisfied with the plan, **do NOT click Start Implementation** — we want the TDD agents to drive the implementation instead
 
 #### Phase 2: TDD Red (Write Failing Tests)
 
-1. In the same session, open the **chat mode dropdown** (bottom-left of the chat input) and select the **TDD Red** agent — this hands off the conversation context to the new agent
-2. The agent will begin writing failing tests. Watch as it writes tests for:
+1. In the same session, open the **chat mode dropdown** (bottom-left of the chat input) and select the **TDD Red** agent — this hands off the conversation context (including your plan) to the new agent
+2. Enter:
+   ```
+   Write failing tests for the scavenger hunt feature from the plan above
+   ```
+3. The agent will write tests for:
    - Component rendering
    - Checkbox interactions
    - Progress calculation
    - State management
-
-3. Check VS Code's **Test Explorer** to see the failing tests
+4. The tests should **all fail** since no implementation exists yet — check VS Code's **Test Explorer** to confirm
 
 #### Phase 3: TDD Green (Make Tests Pass)
 
-1. When Red is done, switch to the **TDD Green** agent using the **chat mode dropdown**
-2. Watch as it:
+1. Switch to the **TDD Green** agent using the **chat mode dropdown**
+2. Enter:
+   ```
+   Make the failing tests pass with minimal implementation
+   ```
+3. Watch as it:
    - Implements the minimum code to pass tests
    - Runs tests after each change
    - Iterates until all tests pass

@@ -7,7 +7,7 @@ tools: ['search', 'github/*', 'playwright/*', 'search/usages', 'read/problems', 
 
 Your goal is to do an in-depth UI review of a website using Playwright and scope potential fixes.
 
-Assume the dev server is running as task and check those first.
+Assume the `python: run` dev server task is running (uvicorn on port 8000) — check that first.
 
 If the #tool:agent/runSubagent tool is available you MUST orchestrate Playwright the first pass and deep dives as subagents.
 
