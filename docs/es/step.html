@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSC44NDPLQ"></script>
@@ -20,9 +20,9 @@
     <link rel="alternate" hreflang="pt-BR" href="https://copilot-dev-days.github.io/agent-lab-python/pt_BR/">
     <link rel="alternate" hreflang="es" href="https://copilot-dev-days.github.io/agent-lab-python/es/">
     <link rel="alternate" hreflang="x-default" href="https://copilot-dev-days.github.io/agent-lab-python/">
-    <link rel="stylesheet" href="step.css">
-    <link rel="stylesheet" href="light-theme.css">
-    <script src="theme-toggle.js"></script>
+    <link rel="stylesheet" href="../step.css">
+    <link rel="stylesheet" href="../light-theme.css">
+    <script src="../theme-toggle.js"></script>
 </head>
 <body>
     <header class="header">
@@ -33,16 +33,16 @@
             </a>
             <nav class="header-nav">
                 <div class="locale-picker" id="localePicker">
-                    <button type="button" class="locale-toggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">🌐</button>
-                    <ul role="listbox" aria-label="Language">
-                        <li role="option" data-locale="en" aria-selected="true" class="active">🇬🇧 English</li>
-                        <li role="option" data-locale="es" aria-selected="false">🇪🇸 Español</li>
+                    <button type="button" class="locale-toggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Seleccionar idioma">🌐</button>
+                    <ul role="listbox" aria-label="Idioma">
+                        <li role="option" data-locale="en" aria-selected="false">🇬🇧 English</li>
+                        <li role="option" data-locale="es" aria-selected="true" class="active">🇪🇸 Español</li>
                         <li role="option" data-locale="pt-BR" aria-selected="false">🇧🇷 Português (Brasil)</li>
                     </ul>
                 </div>
-                <button class="theme-toggle" onclick="toggleTheme()">☀️ Light</button>
-                <button class="nav-btn" id="prevBtn" disabled>← Previous</button>
-                <button class="nav-btn" id="nextBtn">Next →</button>
+                <button class="theme-toggle" onclick="toggleTheme()">☀️ Claro</button>
+                <button class="nav-btn" id="prevBtn" disabled>← Anterior</button>
+                <button class="nav-btn" id="nextBtn">Siguiente →</button>
             </nav>
         </div>
     </header>
@@ -50,7 +50,7 @@
     <div class="layout">
         <aside class="sidebar">
             <div class="sidebar-section">
-                <div class="sidebar-title">Lab Parts</div>
+                <div class="sidebar-title">Partes del Lab</div>
                 <nav id="stepNav"></nav>
             </div>
         </aside>
@@ -58,11 +58,11 @@
         <main class="main">
             <article class="content">
                 <div id="markdown-content" class="markdown">
-                    <div class="loading">Loading content</div>
+                    <div class="loading">Cargando contenido</div>
                 </div>
                 <nav class="nav-footer">
-                    <a href="#" class="nav-footer-btn disabled" id="prevLink">← Previous</a>
-                    <a href="#" class="nav-footer-btn" id="nextLink">Next →</a>
+                    <a href="#" class="nav-footer-btn disabled" id="prevLink">← Anterior</a>
+                    <a href="#" class="nav-footer-btn" id="nextLink">Siguiente →</a>
                 </nav>
             </article>
         </main>
@@ -72,13 +72,13 @@
     <script>
         // Define all steps in order
         const steps = [
-            { id: 'guide', file: 'GUIDE.md', title: 'Quick Reference', number: '📚' },
-            { id: '00-overview', file: '00-overview.md', title: 'Overview & Checklist', number: '00' },
-            { id: '01-setup', file: '01-setup.md', title: 'Setup & Context Engineering', number: '01' },
-            { id: '02-design', file: '02-design.md', title: 'Design-First Frontend', number: '02' },
-            { id: '03-quiz-master', file: '03-quiz-master.md', title: 'Custom Quiz Master', number: '03' },
-            { id: '04-multi-agent', file: '04-multi-agent.md', title: 'Multi-Agent Development', number: '04' },
-            { id: '05-complete', file: '05-complete.md', title: '🎉 Complete!', number: '🎉' },
+            { id: 'guide', file: 'GUIDE.md', title: 'Referencia Rápida', number: '📚' },
+            { id: '00-overview', file: '00-overview.md', title: 'Descripción General & Checklist', number: '00' },
+            { id: '01-setup', file: '01-setup.md', title: 'Configuración e Ingeniería de Contexto', number: '01' },
+            { id: '02-design', file: '02-design.md', title: 'Frontend Design-First', number: '02' },
+            { id: '03-quiz-master', file: '03-quiz-master.md', title: 'Quiz Master Personalizado', number: '03' },
+            { id: '04-multi-agent', file: '04-multi-agent.md', title: 'Desarrollo Multi-Agente', number: '04' },
+            { id: '05-complete', file: '05-complete.md', title: '🎉 ¡Completo!', number: '🎉' },
         ];
 
         // Confetti celebration function
@@ -230,11 +230,8 @@
         // Base URL for fetching markdown - use local files when served locally, GitHub raw for production
         const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
         const GITHUB_RAW_BASE = isLocal
-            ? '../workshop/'
-            : 'https://raw.githubusercontent.com/copilot-dev-days/agent-lab-python/main/workshop/';
-        const CHECKBOX_STORAGE_KEY = 'agent-lab-checkboxes-v1';
-        const COPY_FEEDBACK_DURATION_MS = 1600;
-        let checkboxSaveTimeout;
+            ? '../../workshop/es/'
+            : 'https://raw.githubusercontent.com/copilot-dev-days/agent-lab-python/main/workshop/es/';
 
         // Get current step from URL
         function getCurrentStepId() {
@@ -245,127 +242,6 @@
         function getCurrentStepIndex() {
             const stepId = getCurrentStepId();
             return steps.findIndex(s => s.id === stepId);
-        }
-
-        function readCheckboxState() {
-            try {
-                return JSON.parse(localStorage.getItem(CHECKBOX_STORAGE_KEY) || '{}');
-            } catch {
-                return {};
-            }
-        }
-
-        function writeCheckboxState(state) {
-            try {
-                localStorage.setItem(CHECKBOX_STORAGE_KEY, JSON.stringify(state));
-            } catch {
-                // Ignore storage failures (private mode / blocked storage)
-            }
-        }
-
-        function writeCheckboxStateDebounced(state) {
-            clearTimeout(checkboxSaveTimeout);
-            checkboxSaveTimeout = setTimeout(() => writeCheckboxState(state), 100);
-        }
-
-        function applyVisuallyHiddenStyles(element) {
-            Object.assign(element.style, {
-                position: 'absolute',
-                width: '1px',
-                height: '1px',
-                padding: '0',
-                margin: '-1px',
-                border: '0',
-                overflow: 'hidden',
-                clip: 'rect(0 0 0 0)',
-                clipPath: 'inset(50%)',
-                whiteSpace: 'nowrap'
-            });
-        }
-
-        function initializeTaskListCheckboxes(stepId) {
-            const container = document.getElementById('markdown-content');
-            if (!container) return;
-            const checkboxes = container.querySelectorAll('input[type="checkbox"]');
-            if (checkboxes.length === 0) return;
-
-            const allState = readCheckboxState();
-            if (!Array.isArray(allState[stepId])) {
-                allState[stepId] = [];
-            }
-            const stepState = allState[stepId];
-
-            checkboxes.forEach((checkbox, index) => {
-                checkbox.disabled = false;
-
-                if (typeof stepState[index] === 'boolean') {
-                    checkbox.checked = stepState[index];
-                }
-
-                checkbox.addEventListener('change', () => {
-                    stepState[index] = checkbox.checked;
-                    allState[stepId] = stepState;
-                    writeCheckboxStateDebounced(allState);
-                });
-            });
-        }
-
-        async function copyTextToClipboard(text) {
-            if (navigator.clipboard?.writeText) {
-                await navigator.clipboard.writeText(text);
-                return;
-            }
-
-            const textArea = document.createElement('textarea');
-            textArea.value = text;
-            textArea.setAttribute('readonly', '');
-            applyVisuallyHiddenStyles(textArea);
-            document.body.appendChild(textArea);
-            textArea.select();
-
-            const copySucceeded = document.execCommand('copy');
-            textArea.remove();
-
-            if (!copySucceeded) {
-                throw new Error('Copy failed');
-            }
-        }
-
-        function initializeCodeBlockCopyButtons() {
-            const container = document.getElementById('markdown-content');
-            if (!container) return;
-
-            const codeBlocks = container.querySelectorAll('pre');
-            codeBlocks.forEach((block) => {
-                const codeElement = block.querySelector('code');
-                if (!codeElement || block.querySelector('.code-copy-btn')) return;
-
-                const button = document.createElement('button');
-                button.type = 'button';
-                button.className = 'code-copy-btn';
-                button.textContent = 'Copy';
-                button.setAttribute('aria-label', 'Copy code block');
-
-                let resetTimeoutId = null;
-                button.addEventListener('click', async () => {
-                    try {
-                        await copyTextToClipboard(codeElement.textContent ?? '');
-                        button.textContent = 'Copied!';
-                        button.classList.add('copied');
-                    } catch {
-                        button.textContent = 'Failed';
-                        button.classList.add('failed');
-                    }
-
-                    clearTimeout(resetTimeoutId);
-                    resetTimeoutId = setTimeout(() => {
-                        button.textContent = 'Copy';
-                        button.classList.remove('copied', 'failed');
-                    }, COPY_FEEDBACK_DURATION_MS);
-                });
-
-                block.appendChild(button);
-            });
         }
 
         // Build sidebar navigation
@@ -403,7 +279,7 @@
                 prevLink.classList.remove('disabled');
             } else {
                 prevLink.classList.add('disabled');
-                prevLink.textContent = '← Previous';
+                prevLink.textContent = '← Anterior';
             }
 
             if (idx < steps.length - 1) {
@@ -412,7 +288,7 @@
                 nextLink.classList.remove('disabled');
             } else {
                 nextLink.classList.add('disabled');
-                nextLink.textContent = 'Next →';
+                nextLink.textContent = 'Siguiente →';
             }
         }
 
@@ -432,10 +308,10 @@
             md = md.replace(/\]\(GUIDE\.md\)/g, '](step.html?step=guide)');
             
             // Handle GitHub-style alerts
-            md = md.replace(/>\s*\[!NOTE\]\s*\n/gi, '> **📝 Note**\n>\n');
-            md = md.replace(/>\s*\[!TIP\]\s*\n/gi, '> **💡 Tip**\n>\n');
-            md = md.replace(/>\s*\[!IMPORTANT\]\s*\n/gi, '> **⚠️ Important**\n>\n');
-            md = md.replace(/>\s*💡\s*\*\*Tip:\*\*/gi, '> **💡 Tip**');
+            md = md.replace(/>\s*\[!NOTE\]\s*\n/gi, '> **📝 Nota**\n>\n');
+            md = md.replace(/>\s*\[!TIP\]\s*\n/gi, '> **💡 Consejo**\n>\n');
+            md = md.replace(/>\s*\[!IMPORTANT\]\s*\n/gi, '> **⚠️ Importante**\n>\n');
+            md = md.replace(/>\s*💡\s*\*\*Tip:\*\*/gi, '> **💡 Consejo**');
 
             // Clean up multiple consecutive horizontal rules
             md = md.replace(/---\s*\n\s*---/g, '---');
@@ -447,7 +323,7 @@
         async function loadContent() {
             const idx = getCurrentStepIndex();
             if (idx === -1) {
-                document.getElementById('markdown-content').innerHTML = '<p>Step not found. <a href="?step=00-overview">Go to Overview</a></p>';
+                document.getElementById('markdown-content').innerHTML = '<p>Paso no encontrado. <a href="?step=00-overview">Ir a Descripción General</a></p>';
                 return;
             }
 
@@ -475,8 +351,6 @@
                 });
 
                 document.getElementById('markdown-content').innerHTML = marked.parse(md);
-                initializeTaskListCheckboxes(step.id);
-                initializeCodeBlockCopyButtons();
 
                 // If this is the completion page, add confetti!
                 if (step.id === '05-complete') {
@@ -500,16 +374,16 @@
                                 transition: transform 0.2s, box-shadow 0.2s;
                             " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 10px 40px rgba(0,245,255,0.4)';" 
                                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-                                🎊 More Confetti! 🎊
+                                🎊 ¡Más Confetti! 🎊
                             </button>
                         `;
                     }
                 }
             } catch (error) {
                 document.getElementById('markdown-content').innerHTML = `
-                    <h1>Error Loading Content</h1>
-                    <p>Could not load ${step.file}. Please check your internet connection.</p>
-                    <p><a href="index.html">Return to home</a></p>
+                    <h1>Error al Cargar Contenido</h1>
+                    <p>No se pudo cargar ${step.file}. Por favor, verifica tu conexión a internet.</p>
+                    <p><a href="index.html">Volver a la página principal</a></p>
                 `;
             }
         }

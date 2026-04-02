@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSC44NDPLQ"></script>
@@ -11,7 +11,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VS Code GitHub Copilot Agent Lab | Python Edition</title>
+    <title>VS Code GitHub Copilot Agent Lab | Edición Python</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -19,21 +19,21 @@
     <link rel="alternate" hreflang="pt-BR" href="https://copilot-dev-days.github.io/agent-lab-python/pt_BR/">
     <link rel="alternate" hreflang="es" href="https://copilot-dev-days.github.io/agent-lab-python/es/">
     <link rel="alternate" hreflang="x-default" href="https://copilot-dev-days.github.io/agent-lab-python/">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="light-theme.css">
-    <script src="theme-toggle.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../light-theme.css">
+    <script src="../theme-toggle.js"></script>
 </head>
 <body>
     <div style="position:fixed;top:1rem;right:1rem;z-index:1000;display:flex;gap:0.5rem;align-items:center;">
         <div class="locale-picker" id="localePicker">
-            <button type="button" class="locale-toggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">🌐</button>
-            <ul role="listbox" aria-label="Language">
-                <li role="option" data-locale="en" aria-selected="true" class="active">🇬🇧 English</li>
-                <li role="option" data-locale="es" aria-selected="false">🇪🇸 Español</li>
+            <button type="button" class="locale-toggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Seleccionar idioma">🌐</button>
+            <ul role="listbox" aria-label="Idioma">
+                <li role="option" data-locale="en" aria-selected="false">🇬🇧 English</li>
+                <li role="option" data-locale="es" aria-selected="true" class="active">🇪🇸 Español</li>
                 <li role="option" data-locale="pt-BR" aria-selected="false">🇧🇷 Português (Brasil)</li>
             </ul>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">☀️ Light</button>
+        <button class="theme-toggle" onclick="toggleTheme()">☀️ Claro</button>
     </div>
     <div class="container">
         <!-- Hero -->
@@ -41,94 +41,94 @@
             <span class="hero-badge">🚀 Python + FastAPI + HTMX</span>
             <h1>VS Code GitHub Copilot Agent Lab</h1>
             <p class="hero-subtitle">
-                Build a Social Bingo game while mastering VS Code's Agent Mode with GitHub Copilot. 
-                Learn context engineering, custom agents, and AI-first development workflows.
+                Construye un juego de Bingo Social mientras dominas el Agent Mode de VS Code con GitHub Copilot.
+                Aprende ingeniería de contexto, agentes personalizados y flujos de desarrollo con IA.
             </p>
             <div class="hero-cta">
                 <a href="step.html?step=00-overview" class="btn btn-primary">
-                    🚀 Start Workshop
+                    🚀 Iniciar Taller
                 </a>
-                <a href="https://github.com/copilot-dev-days/agent-lab-python" class="btn btn-secondary">
-                    📦 GitHub Repo
+                <a href="https://github.com/madebygps/vscode-github-copilot-agent-lab" class="btn btn-secondary">
+                    📦 Repositorio GitHub
                 </a>
             </div>
-            <p class="hero-also">Also available in <a href="https://copilot-dev-days.github.io/agent-lab-dotnet/">.NET</a>, <a href="https://copilot-dev-days.github.io/agent-lab-java/">Java</a>, and <a href="https://copilot-dev-days.github.io/agent-lab-typescript/">TypeScript</a></p>
+            <p class="hero-also">También disponible en <a href="https://copilot-dev-days.github.io/agent-lab-dotnet/">.NET</a>, <a href="https://copilot-dev-days.github.io/agent-lab-java/">Java</a> y <a href="https://copilot-dev-days.github.io/agent-lab-typescript/">TypeScript</a></p>
             <div class="stats">
                 <div class="stat">
                     <div class="stat-value">~1hr</div>
-                    <div class="stat-label">Duration</div>
+                    <div class="stat-label">Duración</div>
                 </div>
                 <div class="stat">
                     <div class="stat-value">4</div>
-                    <div class="stat-label">Parts</div>
+                    <div class="stat-label">Partes</div>
                 </div>
                 <div class="stat">
                     <div class="stat-value">9</div>
-                    <div class="stat-label">Checkpoints</div>
+                    <div class="stat-label">Etapas</div>
                 </div>
             </div>
         </section>
 
         <!-- Features -->
         <section class="features">
-            <h2 class="section-title">What You'll Learn</h2>
+            <h2 class="section-title">Lo que Aprenderás</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🧠</div>
-                    <h3>Context Engineering</h3>
-                    <p>Teach AI about your codebase with instructions, making Copilot suggestions more accurate and relevant.</p>
+                    <h3>Ingeniería de Contexto</h3>
+                    <p>Enseña a la IA sobre tu base de código con instrucciones, haciendo las sugerencias de Copilot más precisas y relevantes.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🤖</div>
-                    <h3>Agentic Primitives</h3>
-                    <p>Use background agents, cloud agents, and custom workflows to scale your development.</p>
+                    <h3>Primitivas Agénticas</h3>
+                    <p>Usa agentes en segundo plano, agentes en la nube y flujos de trabajo personalizados para escalar tu desarrollo.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
-                    <h3>Design-First Development</h3>
-                    <p>Let AI iterate on UI while you guide the creative vision with specialized design agents.</p>
+                    <h3>Desarrollo Design-First</h3>
+                    <p>Deja que la IA itere en la interfaz mientras tú guías la visión creativa con agentes de diseño especializados.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🧪</div>
-                    <h3>Test-Driven Development</h3>
-                    <p>Build reliable features using TDD agents with Red-Green-Refactor workflow.</p>
+                    <h3>Desarrollo Guiado por Pruebas</h3>
+                    <p>Construye funcionalidades confiables usando agentes TDD con el flujo Red-Green-Refactor.</p>
                 </div>
             </div>
         </section>
 
         <!-- Workshop Parts -->
         <section class="workshop">
-            <h2 class="section-title">Workshop Parts</h2>
+            <h2 class="section-title">Partes del Taller</h2>
             <div class="parts-list">
                 <a href="step.html?step=01-setup" class="part-card">
                     <div class="part-number">01</div>
                     <div class="part-content">
-                        <h3>Setup & Context Engineering</h3>
-                        <p>Clone, configure, and teach the AI about your project</p>
+                        <h3>Configuración e Ingeniería de Contexto</h3>
+                        <p>Clona, configura y enseña a la IA sobre tu proyecto</p>
                     </div>
                     <span class="part-time">15 min</span>
                 </a>
                 <a href="step.html?step=02-design" class="part-card">
                     <div class="part-number">02</div>
                     <div class="part-content">
-                        <h3>Design-First Frontend</h3>
-                        <p>Redesign the UI with creative themes using Plan Mode</p>
+                        <h3>Frontend Design-First</h3>
+                        <p>Rediseña la interfaz con temas creativos usando el Plan Mode</p>
                     </div>
                     <span class="part-time">15 min</span>
                 </a>
                 <a href="step.html?step=03-quiz-master" class="part-card">
                     <div class="part-number">03</div>
                     <div class="part-content">
-                        <h3>Custom Quiz Master</h3>
-                        <p>Create themed quiz questions with custom agents</p>
+                        <h3>Quiz Master Personalizado</h3>
+                        <p>Crea preguntas de quiz temáticas con agentes personalizados</p>
                     </div>
                     <span class="part-time">10 min</span>
                 </a>
                 <a href="step.html?step=04-multi-agent" class="part-card">
                     <div class="part-number">04</div>
                     <div class="part-content">
-                        <h3>Multi-Agent Development</h3>
-                        <p>Build new features with TDD and design agents</p>
+                        <h3>Desarrollo Multi-Agente</h3>
+                        <p>Construye nuevas funcionalidades con agentes TDD y de diseño</p>
                     </div>
                     <span class="part-time">20 min</span>
                 </a>
@@ -139,7 +139,7 @@
     <!-- Prerequisites -->
     <section class="prereqs">
         <div class="container">
-            <h2 class="section-title">Prerequisites</h2>
+            <h2 class="section-title">Requisitos Previos</h2>
             <div class="prereqs-grid">
                 <div class="prereq-item">
                     <span class="prereq-check">✓</span>
@@ -155,7 +155,7 @@
                 </div>
                 <div class="prereq-item">
                     <span class="prereq-check">✓</span>
-                    <span>Git installed</span>
+                    <span>Git instalado</span>
                 </div>
             </div>
         </div>
@@ -165,13 +165,13 @@
         <!-- Footer -->
         <footer>
             <div class="footer-links">
-                <a href="https://github.com/copilot-dev-days/agent-lab-python">GitHub Repository</a>
+                <a href="https://github.com/madebygps/vscode-github-copilot-agent-lab">Repositorio GitHub</a>
                 <a href="https://www.youtube.com/code">VS Code YouTube</a>
-                <a href="https://code.visualstudio.com/docs/copilot/overview">Copilot Docs</a>
+                <a href="https://code.visualstudio.com/docs/copilot/overview">Docs de Copilot</a>
                 <a href="https://github.com/github/awesome-copilot">Awesome Copilot</a>
             </div>
             <p class="footer-credit">
-                Built with 💜 by the VS Code Team
+                Hecho con 💜 por el equipo de VS Code
             </p>
         </footer>
     </div>

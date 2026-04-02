@@ -1,3 +1,5 @@
+🌐 [Português (BR)](README.pt_BR.md) | [Español](README.es.md)
+
 # Soc Ops
 
 Social Bingo game for in-person mixers. Find people who match the questions and get 5 in a row!

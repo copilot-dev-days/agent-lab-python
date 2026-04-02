@@ -354,3 +354,13 @@ footer {
     color: var(--neon-magenta);
     text-decoration: underline;
 }
+
+/* --- Locale Picker --- */
+.locale-picker { position: relative; display: inline-flex; }
+.locale-toggle { display: flex; align-items: center; justify-content: center; padding: 8px; border-radius: 10px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-secondary); font-size: 1rem; line-height: 1; transition: all 0.2s; cursor: pointer; }
+.locale-toggle:hover { background: var(--neon-cyan); color: #fff; border-color: var(--neon-cyan); }
+.locale-picker ul { display: none; position: absolute; top: 100%; right: 0; margin: 4px 0 0; padding: 4px 0; list-style: none; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 100; min-width: 180px; }
+.locale-picker li { padding: 8px 16px; cursor: pointer; font-size: 0.9rem; color: var(--text-primary); white-space: nowrap; transition: background 0.15s; }
+.locale-picker li:hover { background: var(--neon-cyan); color: #fff; }
+.locale-picker li.active { font-weight: 600; color: var(--neon-cyan); }
+.locale-picker li.active:hover { color: #fff; }
